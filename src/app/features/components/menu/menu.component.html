@@ -1,29 +1,57 @@
-<div class="container-xs-sm-md">
-  <div class="row-xs-sm-md">
-    <div class="col-xs-sm-md">
-      <div class="row-xs-sm-md">
-        <h2>Informations</h2>
-      </div>
+<div class="menu-container" [class.open]="isOpen">
+  <div class="menu-toggle" (click)="toggleMenu()">
+    <span *ngIf="!isOpen">&#9776; Menu</span>
+    <span *ngIf="isOpen">&#10006; Fermer</span>
+  </div>
 
-      <div class="row-xs-sm-md">
-        <h2>Diplômes</h2>
-      </div>
+  <div class="menu-content">
+    <div class="row-xs-sm-md">
+      <h1>Lucas Schiavetti</h1>
 
-      <div class="row-xs-sm-md">
-        <h2>Compétences</h2>
-      </div>
+      <h2>Développeur web junior</h2>
+    </div>
+    <div class="row-xs-sm-md">
+      <h3>
+        <a routerLink="/informations" routerLinkActive="active-link"
+          >Informations</a
+        >
+      </h3>
+    </div>
 
-      <div class="row-xs-sm-md">
-        <h2>Projets</h2>
-      </div>
+    <div class="row-xs-sm-md">
+      <h3>
+        <a routerLink="/diplomes" routerLinkActive="active-link">Diplômes</a>
+      </h3>
+    </div>
 
-      <div class="row-xs-sm-md">
-        <h2>Expérience professionnelles</h2>
-      </div>
+    <div class="row-xs-sm-md">
+      <h3>
+        <a routerLink="/competences" routerLinkActive="active-link"
+          >Compétences</a
+        >
+      </h3>
+    </div>
 
-      <div class="row-xs-sm-md">
-        <h2>Coordonnées</h2>
-      </div>
+    <div class="row-xs-sm-md">
+      <h3>
+        <a routerLink="/projets" routerLinkActive="active-link">Projets</a>
+      </h3>
+    </div>
+
+    <div class="row-xs-sm-md">
+      <h3>
+        <a routerLink="/experience" routerLinkActive="active-link"
+          >Expérience professionnelles</a
+        >
+      </h3>
+    </div>
+
+    <div class="row-xs-sm-md">
+      <h3>
+        <a routerLink="/coordonnees" routerLinkActive="active-link"
+          >Coordonnées</a
+        >
+      </h3>
     </div>
   </div>
 </div>

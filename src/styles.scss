@@ -1,10 +1,14 @@
-$noir: #000f08;
+
+// $noir: #000f08;
+$noir: #050505;
 $beige: #E7DECD;
-$rouge: #F74F4F;
+$rouge: #d34444;
 $violet: #A997DF;
 $blanc: #EEF1EF;
 
-*{
-  background-color: $blanc;
+.all{
+  width: auto;
+  height: 100vh;
   color: $noir;
+  background-color: #E7DECD;
 }
