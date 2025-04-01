@@ -7,17 +7,19 @@ import { ProjetsComponent } from './app/features/components/projets/projets.comp
 import { ExperienceComponent } from './app/features/components/experience/experience.component';
 import { CoordonneesComponent } from './app/features/components/coordonnees/coordonnees.component';
 import { AppComponent } from './app/app.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 bootstrapApplication(AppComponent, {
   providers: [
     provideRouter([
-      { path: '', component: InformationsComponent },
+      { path: ''},
+      { path: 'informations', component: InformationsComponent},
       { path: 'diplomes', component: DiplomesComponent },
       { path: 'competences', component: CompetencesComponent },
       { path: 'projets', component: ProjetsComponent },
       { path: 'experience', component: ExperienceComponent },
       { path: 'coordonnees', component: CoordonneesComponent },
       { path: '**', redirectTo: '' },
-    ])
+    ]), provideAnimationsAsync()
   ]
 });
