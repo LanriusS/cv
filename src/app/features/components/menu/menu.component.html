@@ -10,48 +10,16 @@
 
       <h2>Développeur web junior</h2>
     </div>
-    <div class="row-xs-sm-md">
-      <h3>
-        <a routerLink="/informations" routerLinkActive="active-link"
-          >Informations</a
-        >
-      </h3>
-    </div>
-
-    <div class="row-xs-sm-md">
-      <h3>
-        <a routerLink="/diplomes" routerLinkActive="active-link">Diplômes</a>
-      </h3>
-    </div>
-
-    <div class="row-xs-sm-md">
-      <h3>
-        <a routerLink="/competences" routerLinkActive="active-link"
-          >Compétences</a
-        >
-      </h3>
-    </div>
-
-    <div class="row-xs-sm-md">
-      <h3>
-        <a routerLink="/projets" routerLinkActive="active-link">Projets</a>
-      </h3>
-    </div>
-
-    <div class="row-xs-sm-md">
-      <h3>
-        <a routerLink="/experience" routerLinkActive="active-link"
-          >Expérience professionnelles</a
-        >
-      </h3>
-    </div>
-
-    <div class="row-xs-sm-md">
-      <h3>
-        <a routerLink="/coordonnees" routerLinkActive="active-link"
-          >Coordonnées</a
-        >
-      </h3>
-    </div>
+    <nav>
+      <a
+        *ngFor="let item of menuItems"
+        [routerLink]="item.path"
+        routerLinkActive="active"
+        class="menu-item"
+      >
+        <i class="material-icons">{{ item.icon }}</i>
+        <span>{{ item.label }}</span>
+      </a>
+    </nav>
   </div>
 </div>
