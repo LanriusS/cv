@@ -12,7 +12,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 bootstrapApplication(AppComponent, {
   providers: [
     provideRouter([
-      { path: ''},
+      { path: '', component: InformationsComponent },
       { path: 'informations', component: InformationsComponent},
       { path: 'diplomes', component: DiplomesComponent },
       { path: 'competences', component: CompetencesComponent },

@@ -1,6 +1,7 @@
 <div class="all container-xs-sm-md">
-  <div class="row-xs-sm-md"></div>
+  <app-menu (menuToggled)="onMenuToggle($event)"></app-menu>
 
-  <app-menu></app-menu>
-  <router-outlet></router-outlet>
+  <div class="router-container" [class.open]="menuOpen">
+    <router-outlet></router-outlet>
+  </div>
 </div>

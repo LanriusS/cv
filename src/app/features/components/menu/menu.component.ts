@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MenuItem } from '../../../models/menu-item';
 import { RouterModule } from '@angular/router';
@@ -12,19 +12,21 @@ import { RouterModule } from '@angular/router';
 })
 export class MenuComponent {
 
+  @Output() menuToggled = new EventEmitter<boolean>();
+  isOpen = false;
+
   menuItems: MenuItem[] = [
     { path: '/informations', label: 'Informations', icon: 'person' },
-    { path: '/competences', label: 'Compétences', icon: 'psychology' },
-    { path: '/coordonnees', label: 'Coordonnées', icon: 'contact_mail' },
     { path: '/diplomes', label: 'Diplômes', icon: 'school' },
-    { path: '/experiences', label: 'Expériences', icon: 'work' },
-    { path: '/projets', label: 'Projets', icon: 'folder' }
+    { path: '/competences', label: 'Compétences', icon: 'psychology' },
+    { path: '/experience', label: 'Expériences', icon: 'work' },
+    { path: '/projets', label: 'Projets', icon: 'folder' },
+    { path: '/coordonnees', label: 'Coordonnées', icon: 'contact_mail' }
   ];
-
-  isOpen = false;
 
   toggleMenu() {
     this.isOpen = !this.isOpen;
+    this.menuToggled.emit(this.isOpen);
   }
 
 }

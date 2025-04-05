@@ -1,16 +1,22 @@
-
 $noir: #050505;
-$beige: #E7DECD;
+$beige: #e7decd;
 $rouge: #d34444;
-$violet: #A997DF;
-$blanc: #EEF1EF;
+$violet: #a997df;
+$blanc: #eef1ef;
 
-.all{
+.all {
   width: auto;
   height: 100vh;
   color: $noir;
-  background-color: #E7DECD;
+  background-color: #e7decd;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+
+  router-outlet {
+    margin-left: 500px;
+  }
+}

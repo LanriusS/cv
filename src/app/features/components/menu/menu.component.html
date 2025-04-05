@@ -11,12 +11,7 @@
       <h2>Développeur web junior</h2>
     </div>
     <nav>
-      <a
-        *ngFor="let item of menuItems"
-        [routerLink]="item.path"
-        routerLinkActive="active"
-        class="menu-item"
-      >
+      <a *ngFor="let item of menuItems" [routerLink]="[item.path]" routerLinkActive="active" class="menu-item">
         <i class="material-icons">{{ item.icon }}</i>
         <span>{{ item.label }}</span>
       </a>

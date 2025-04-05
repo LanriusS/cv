@@ -11,4 +11,10 @@ import { MenuComponent } from "./features/components/menu/menu.component";
 })
 export class AppComponent {
   title = 'CV';
+
+  menuOpen = false;
+
+  onMenuToggle(state: boolean) {
+    this.menuOpen = state;
+  }
 }
