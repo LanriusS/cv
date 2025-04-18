@@ -1,54 +1,7 @@
 @import "../../../../styles.scss";
 
-.infoDiv {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 2rem auto;
-  background-color: $blanc;
-  border-radius: 1rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  font-family: "Roboto", sans-serif;
-  color: $noir;
+.classicTheme {
+}
 
-  h1 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-    color: $violet;
-  }
-
-  p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-
-    strong {
-      color: $noir;
-    }
-  }
-
-  .intro {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: $noir;
-  }
-
-  .email {
-    color: $violet;
-    text-decoration: none;
-    font-weight: bold;
-    position: relative;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: darken($violet, 10%);
-    }
-
-    &::after {
-      content: "✉";
-      position: absolute;
-      right: -1.5rem;
-      top: 0;
-      opacity: 0.6;
-    }
-  }
+.rpgTheme {
 }

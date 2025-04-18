@@ -1,22 +1,30 @@
-<div class="section">
-  <h1>À propos de moi</h1>
+<!-- Uniquement pour le thème classique -->
+<div *ngIf="currentTheme === 'classicTheme'" class="classicTheme ">
+  <div class="section">
+    <h1>À propos de moi</h1>
 
-  <p class="intro">
-    Ce site a été conçu pour présenter mes compétences en développement web, principalement orientées
-    vers le développement front-end.
-  </p>
+    <p class="intro">
+      Ce site a été conçu pour présenter mes compétences en développement web, principalement orientées
+      vers le développement front-end.
+    </p>
 
-  <p>
-    Récemment diplômé d’un <strong>BUT Informatique</strong> à l’IUT de <strong>Nice</strong>,
-    je suis à la recherche d’un poste de <strong>développeur front-end</strong>.
-    Je suis passionné par la création d’interfaces modernes, réactives et accessibles.
-  </p>
+    <p>
+      Récemment diplômé d’un <strong>BUT Informatique</strong> à l’IUT de <strong>Nice</strong>,
+      je suis à la recherche d’un poste de <strong>développeur front-end</strong>.
+      Je suis passionné par la création d’interfaces modernes, réactives et accessibles.
+    </p>
 
-  <p><strong>🔧 Technologies :</strong> Angular, React, TypeScript, SCSS, Material UI, Bootstrap, Git</p>
-  <p><strong>📍 Localisation :</strong> Saint-laurent-du-var, France</p>
-  <p>
-    <strong>📬 Contact :</strong>
-    <a href="mailto: lucas.schiavetti@mail.com"> lucas.schiavetti&#64;etu.unice.fr</a>
-    <!-- 06 79 07 59 48 -->
-  </p>
+    <p><strong>🔧 Technologies :</strong> Angular, React, TypeScript, SCSS, Material UI, Bootstrap, Git</p>
+    <p><strong>📍 Localisation :</strong> Saint-laurent-du-var, France</p>
+    <p>
+      <strong>📬 Contact :</strong>
+      <a href="mailto: lucas.schiavetti@mail.com"> lucas.schiavetti&#64;etu.unice.fr</a>
+      <!-- 06 79 07 59 48 -->
+    </p>
+  </div>
+</div>
+
+<!-- Uniquement pour le thème RPG -->
+<div *ngIf="currentTheme === 'rpgTheme'" class="classicTheme">
+
 </div>

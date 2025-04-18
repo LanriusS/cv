@@ -1,16 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-
 @Component({
-  selector: 'app-informations',
+  selector: 'app-header',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './informations.component.html',
-  styleUrl: './informations.component.scss'
+  templateUrl: './header.component.html',
+  styleUrl: './header.component.scss'
 })
-export class InformationsComponent {
-
+export class HeaderComponent {
   currentTheme='rpgTheme';
   // currentTheme='classicTheme';
 }

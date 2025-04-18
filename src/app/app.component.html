@@ -1,7 +1,22 @@
 <div class="all container-xs-sm-md">
-  <app-menu (menuToggled)="onMenuToggle($event)"></app-menu>
 
-  <div class="router-container" [class.open]="menuOpen">
+  <!-- Uniquement pour le thème RPG -->
+  <div *ngIf="currentTheme === 'rpgTheme'">
+    <app-header></app-header>
+
+    <!-- <app-menu></app-menu> -->
+
     <router-outlet></router-outlet>
   </div>
+
+  <!-- Uniquement pour le thème classique -->
+  <div *ngIf="currentTheme === 'classicTheme'">
+
+    <app-menu (menuToggled)="onMenuToggle($event)"></app-menu>
+
+    <div class="router-container" [class.open]="menuOpen">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
 </div>
