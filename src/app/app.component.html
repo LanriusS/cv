@@ -1,16 +1,16 @@
-<div class="all container-xs-sm-md">
+<!-- <div class="all container-xs-sm-md"> -->
 
-  <!-- Uniquement pour le thème RPG -->
-  <div *ngIf="currentTheme === 'rpgTheme'">
-    <app-header></app-header>
+<!-- Uniquement pour le thème RPG -->
+<!-- <div *ngIf="currentTheme === 'rpgTheme'"> -->
+<!-- <app-header></app-header> -->
 
-    <!-- <app-menu></app-menu> -->
-
+<!-- <app-menu></app-menu> -->
+<!--
     <router-outlet></router-outlet>
-  </div>
+  </div> -->
 
-  <!-- Uniquement pour le thème classique -->
-  <div *ngIf="currentTheme === 'classicTheme'">
+<!-- Uniquement pour le thème classique -->
+<!-- <div *ngIf="currentTheme === 'classicTheme'">
 
     <app-menu (menuToggled)="onMenuToggle($event)"></app-menu>
 
@@ -19,4 +19,9 @@
     </div>
   </div>
 
-</div>
+</div> -->
+
+<app-welcome-page *ngIf="showWelcome()" (preferencesSet)="onPreferencesSet()">
+</app-welcome-page>
+
+<router-outlet *ngIf="!showWelcome()"></router-outlet>

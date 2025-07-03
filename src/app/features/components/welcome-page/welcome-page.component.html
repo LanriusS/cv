@@ -1,0 +1,56 @@
+<div class="section">
+  <div class="headerWelcome">
+    <h2>Bienvenue sur mon CV/Portfolio</h2>
+  </div>
+
+  <div class="chooseWelcome">
+    <h4>Choisissez votre langue :</h4>
+    <div class="language-selection">
+      <button (click)="changeLanguage('fr')">
+        <img src="../../../../assets/flags/fr.svg" alt="Français" />
+        Français
+      </button>
+      <button (click)="changeLanguage('en')">
+        <img src="../../../../assets/flags/en.svg" alt="English" />
+        English
+      </button>
+      <button (click)="changeLanguage('es')">
+        <img src="../../../../assets/flags/es.svg" alt="Español" />
+        Español
+      </button>
+      <button (click)="changeLanguage('it')">
+        <img src="../../../../assets/flags/it.svg" alt="Italiano" />
+        Italiano
+      </button>
+      <button (click)="changeLanguage('jp')">
+        <img src="../../../../assets/jp.svg" alt="日本語" />
+        日本語
+      </button>
+    </div>
+
+    <h4>Choisissez votre thème :</h4>
+    <div class="theme-selection">
+      <button (click)="changeTheme('classicTheme')">
+        <img src="assets/themes/classic.png" alt="Classique" />
+        Classique
+      </button>
+      <button (click)="changeTheme('rpgTheme')">
+        <img src="assets/themes/rpg.png" alt="RPG" />
+        RPG
+      </button>
+      <button (click)="changeTheme('darkTheme')">
+        <img src="assets/themes/dark.png" alt="Sombre" />
+        Sombre
+      </button>
+      <button (click)="changeTheme('cyberTheme')">
+        <img src="assets/themes/cyber.png" alt="Cyberpunk" />
+        Cyberpunk
+      </button>
+    </div>
+  </div>
+
+  <div class="footWelcome">
+    <h3>Modification possible à tout moment depuis la roue dentée.</h3>
+    <h3>Cette page s'affiche seulement à la première visite. Pour la revoir, supprimez les cookies.</h3>
+  </div>
+</div>
